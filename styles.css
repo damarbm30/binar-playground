@@ -5,6 +5,7 @@
 
 .container {
   padding: 1em;
+  min-height: 1200px;
 }
 
 .title {
@@ -17,4 +18,8 @@
   width: 350px;
   margin-top: 2rem;
   padding: 1em;
+}
+
+.static {
+  position: static;
 }
