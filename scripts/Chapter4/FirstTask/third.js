@@ -265,6 +265,6 @@ function getEvenUsers(users) {
   return mappedUsers;
 }
 
-console.log(sortedEmailDesc);
-console.log(sortedCompanyAsc);
-console.log(getEvenUsers(users));
+document.write("NOMOR 1: ", JSON.stringify(sortedEmailDesc) + "<br/><br/>");
+document.write("NOMOR 2: ", JSON.stringify(sortedCompanyAsc) + "<br/><br/>");
+document.write("NOMOR 3: ", getEvenUsers(users));
