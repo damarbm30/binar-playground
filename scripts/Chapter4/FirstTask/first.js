@@ -42,5 +42,5 @@ class Row {
 
 const firstRow = new Row(newArray);
 console.log(firstRow.getElementsIndex([52, 55, 57, 68, 77]));
-console.log(firstRow.getValueByIndex(499));
+console.log(firstRow.getValueByIndex(490));
 console.log(firstRow.sortArrayDesc());
