@@ -1,9 +1,8 @@
 let newArray = [];
 
-for (let i = 0; i < 500 * 2; i++) {
-  if (i % 2 !== 0) {
-    newArray.push(i);
-  }
+for (let i = 1; i <= 500; i++) {
+  let number = i + (i - 1);
+  newArray.push(number);
 }
 
 class Row {
