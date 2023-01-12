@@ -259,10 +259,12 @@ const sortedCompanyAsc = users.sort((a, b) => {
 
 function getEvenUsers(users) {
   const filteredUsers = users.filter((user) => user.id % 2 === 0);
-  const mappedUsers = filteredUsers.map((user) => user.address);
+  const mappedUsers = filteredUsers.map((user) => {
+    return `[ADDRESS: ${JSON.stringify(user.address)} COMPANY: ${JSON.stringify(user.company)}]`;
+  });
   return mappedUsers;
 }
 
-// console.log(sortedEmailDesc);
-// console.log(sortedCompanyAsc);
+console.log(sortedEmailDesc);
+console.log(sortedCompanyAsc);
 console.log(getEvenUsers(users));
