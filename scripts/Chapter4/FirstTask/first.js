@@ -25,14 +25,7 @@ class Row {
   }
 
   getValueByIndex(index) {
-    // return this.array[index];
-    let newArray = [];
-
-    for (let i = index; i < this.array.length; i++) {
-      newArray.push(this.array[i]);
-    }
-
-    return newArray;
+    return this.array[index];
   }
 
   sortArrayDesc() {
@@ -42,5 +35,5 @@ class Row {
 
 const firstRow = new Row(newArray);
 console.log(firstRow.getElementsIndex([52, 55, 57, 68, 77]));
-console.log(firstRow.getValueByIndex(490));
+console.log(firstRow.getValueByIndex(0));
 console.log(firstRow.sortArrayDesc());
