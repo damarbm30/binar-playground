@@ -257,5 +257,12 @@ const sortedCompanyAsc = users.sort((a, b) => {
   return 0;
 });
 
-console.log(sortedEmailDesc);
-console.log(sortedCompanyAsc);
+function getEvenUsers(users) {
+  const filteredUsers = users.filter((user) => user.id % 2 === 0);
+  const mappedUsers = filteredUsers.map((user) => user.address);
+  return mappedUsers;
+}
+
+// console.log(sortedEmailDesc);
+// console.log(sortedCompanyAsc);
+console.log(getEvenUsers(users));
