@@ -16,8 +16,6 @@ function pascalTriangle(numRows) {
     arr[i][i] = 1;
   }
 
-  console.log(arr[2][0]);
-
   return arr;
 }
 
