@@ -9,7 +9,7 @@ const TwoSum = () => {
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j < arr.length; j++) {
         if (parseInt(arr[i]) + parseInt(arr[j]) === parseInt(target)) {
-          return [i, j];
+          return `Index: ${i}, ${j}`;
         }
       }
     }

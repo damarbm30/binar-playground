@@ -23,8 +23,6 @@ const Pascal = () => {
     return arr;
   };
 
-  console.log(isSubmit);
-
   return (
     <section>
       <Typography variant="h1" gutterBottom>
@@ -40,7 +38,16 @@ const Pascal = () => {
           </Stack>
         </Box>
       </form>
-      <Box sx={{ marginY: 2 }}>{isSubmit ? pascalTriangle(rowCount) : ""}</Box>
+      <Box sx={{ marginY: 2 }}>
+        <p>
+          Output:
+          {isSubmit
+            ? pascalTriangle(rowCount).map((item) => {
+                return <li style={{ listStyle: "none" }}>{item}</li>;
+              })
+            : ""}
+        </p>
+      </Box>
     </section>
   );
 };
