@@ -1,7 +1,7 @@
 function pascalTriangle(numRows) {
   let arr = [];
 
-  for (let i = 1; i <= numRows - 1; i++) {
+  for (let i = 0; i < numRows; i++) {
     // create 2D array
     arr[i] = [];
     // first element of array always be 1
@@ -19,4 +19,4 @@ function pascalTriangle(numRows) {
   return arr;
 }
 
-console.log(pascalTriangle(5));
+console.log(pascalTriangle(1));

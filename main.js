@@ -1,14 +1,13 @@
-const getArithmetic = (min, max) => {
-  let array = [];
+var tutorial = document.getElementById("app");
+tutorial.innerText = "Tutorial Javascript";
+tutorial.style.backgroundColor = "aqua";
+tutorial.style.padding = "4rem";
 
-  for (let i = min; i <= max; i++) {
-    min -= min - 1;
-    const result = min + ((i - 1) * i) / 2;
-    array.push(result);
-  }
-  return array;
-};
+var judul = document.createElement("h1");
+judul.textContent = "Belajar Javascript";
+document.body.append(judul);
 
-console.log(getArithmetic(3, 5));
-console.log(getArithmetic(1, 5));
-console.log(getArithmetic(222, 232));
+var h2 = document.getElementById("judul_2");
+setTimeout(() => {
+  h2.remove();
+}, 5000);
