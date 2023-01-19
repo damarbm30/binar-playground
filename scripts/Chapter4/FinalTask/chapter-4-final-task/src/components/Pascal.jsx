@@ -8,7 +8,7 @@ const Pascal = () => {
   const pascalTriangle = (numRows) => {
     let arr = [];
 
-    for (let i = 1; i <= numRows - 1; i++) {
+    for (let i = 0; i < numRows; i++) {
       arr[i] = [];
       arr[0] = [1];
       arr[i][0] = 1;
