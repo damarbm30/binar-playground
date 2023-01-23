@@ -260,7 +260,10 @@ const sortedCompanyAsc = users.sort((a, b) => {
 function getEvenUsers(users) {
   const filteredUsers = users.filter((user) => user.id % 2 === 0);
   const mappedUsers = filteredUsers.map((user) => {
-    return `[ADDRESS: ${JSON.stringify(user.address)} COMPANY: ${JSON.stringify(user.company)}]`;
+    const { name } = user.company;
+    const { street, suite, city, zipcode, geo } = user.address;
+
+    return `Nama: ${name}. Alamat: ${street}, ${suite}, ${city}, ${zipcode}, ${geo.lat}, ${geo.lng} </br></br>`;
   });
   return mappedUsers;
 }
